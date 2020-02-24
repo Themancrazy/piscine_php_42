@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Register to Ebabe</title>
+		<style>
+			H1 {
+				margin-top: 420px;
+				text-align: center;
+				font-family: arial;
+			}
+			.login {
+				text-align: center;
+				margin-bottom: -1px;
+				font-family: arial;
+			}
+			.pw {
+				margin-left: 4px;
+			}
+			.logbtn {
+				margin-top: 1px;
+				width: 131px;
+			}
+			.box {
+				position: relative;
+				left: 32%;
+				width: 500px;
+				height: 260px;
+				border-radius: 10px;
+				background-color: grey;
+				box-shadow: 0px 14px 29px 2px rgba(0,0,0,0.75);
+			}
+			.row {
+				display: inline;
+				min-width: 300px;
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.column {
+				width: 20%;
+				min-width: 120px;
+				float: left;
+			}
+			.left {
+				margin-left: 30%;
+			}
+			.tit {
+				text-decoration: underline;
+			}
+			.g-recaptcha {
+				position: relative;
+				left: 20%;
+			}
+		</style>
+	</head>
+	<body style="background-color: #afbcbf">
+		<div class="box">
+		<H1 class="tit">Welcome new user!</H1>
+		<form action="create.php" method="POST" class="login">
+			<div class="row">
+				<div class="column left">Username:</div>
+				<div class="column"><input type="text" name="login" value="" required placeholder="Username"/><br /></div>
+				<div class="column left">Password:</div>
+				<div class="column"><input type="password" name="passwd" value="" required placeholder="New Password"/><br /></div>
+				<div class="column left">E-mail:</div>
+				<div class="column"><input type="text" name="email" value="" required placeholder="E-mail address"/><br /></div>
+				<div class="column left">Phone #:</div>
+				<div class="column"><input type="text" name="phone" value="" required placeholder="Phone #"/><br /></div>
+				<div class="column left">Address:</div>
+				<div class="column"><input type="text" name="address" value="" required placeholder="Address"/><br /></div>
+				<div class="column left"><br /></div>
+				<div class="column"><input type="submit" name="submit" value="OK" class="logbtn"/></div>
+			</div>
+			<div class="g-recaptcha" data-sitekey="6LexGJsUAAAAADebmWuYAZ0kUhn7w0eOaElilEs-" data-theme="dark"></div><br>
+		</form>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		</div>
+	</body>
+</html>

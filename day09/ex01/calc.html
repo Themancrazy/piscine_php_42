@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        var num_1 = document.getElementById("num1");
+        var num_2 = document.getElementById("num2");
+        function doMath() {
+            alert(`value of op is ${document.getElementById("operator")}`);
+            if (num_1.value < 0 || num_2.value < 0)
+                alert("Error :(");
+        }
+        doMath();
+    </script>
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+        .calculator {
+            position: relative;
+            top: 500px;
+            left: 45%;
+            height: 100px;
+            width: 300px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0px -11px 18px 5px rgba(0,0,0,0.75);
+        }
+        .ins_c {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-radius: 10px 10px 0 0;
+            background-color: black;
+        }
+        #num1 {
+            width: 25%;
+            border-radius: 10px;
+            margin-right: 10%;
+        }
+        #num2 {
+            width: 25%;
+            border-radius: 10px;
+            margin-left: 10%;
+        }
+        #try_me {
+            position: relative;
+            left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <form class="ins_c">
+        <input id="num1" type="number" require placeholder="number">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input id="num2" type="number" require placeholder="number">
+        </form>
+        <br><button type="button" id="try_me">Try Me!</button>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+	#calculator {
+		margin: auto;
+	}
+	</style>
+	<script type="text/javascript">
+		function message(string) {
+			console.log(string);
+			alert(string);
+		}
+		function operation(operator) {
+			switch (operator) {
+				case "+": return(value_1 + value_2);
+				case "-": return(value_1 - value_2);
+				case "*": return(value_1 * value_2);
+				case "/": return (value_2 != 0) ? (value_1 / value_2) : ("It’s over 9000!");
+				case "%": return (value_2 != 0) ? (value_1 % value_2) : ("It’s over 9000!");
+			}
+		}
+		function message_repeat() {
+			alert("Please, use me...");
+			setTimeout(message_repeat, 30 * 1000);
+		}
+		document.addEventListener('DOMContentLoaded', function() {
+			operator = document.getElementById('operator').options;
+			input_1 = document.getElementById('value_1');
+			input_2 = document.getElementById('value_2');
+			setTimeout(message_repeat, 30 * 1000);
+			document.getElementById('run').addEventListener('click', function() {
+				value_1 = parseInt(input_1.value, 10);
+				value_2 = parseInt(input_2.value, 10);
+				if (value_1 >= 0 && value_2 >= 0)
+					message(operation(operator[operator.selectedIndex].value));
+				else
+					message("Error :(");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="calculator">
+		<input type="text" id="value_1"/>
+		<select id="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+			<option value="%">%</option>
+		</select>
+		<input type="text" id="value_2"/>
+		<input type="submit" value="Try me!" id="run"/>
+	</div>
+</body>
+
+</html>

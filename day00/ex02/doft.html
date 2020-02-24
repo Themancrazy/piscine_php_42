@@ -1,0 +1,66 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- doft.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: anjansse <marvin@42.fr>                    +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/03/23 10:48:35 by anjansse          #+#    #+#            -->
+<!-- Updated: 2019/03/26 19:21:43 by anjansse         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="doft.css" type="text/css" rel="stylesheet">
+		<title>Day of the 42</title>
+	</head>
+	<body style="background-color: rgb(80, 80, 80); margin: 0">
+		<header>
+			<img id="dot42" src="resources/day_of_the_42.png" title="Day of the 42"/>
+			<a href="https://www.disney.com"><img id="reload" src="resources/reload.png" title="Recommencer au début"/></a>
+			<a href="https://www.relaischateaux.com"><img id="close" src="resources/close.gif" title="Déconnecter"/></a>
+			<img id="loupe" src="resources/loupe.png" title="Surveiller"/>
+		</header>
+		<div id="middle">
+			<div id="left">
+				<img src="resources/arrow.png" title="Avancer"/>
+				<img src="resources/main.png" title="Prendre"/>
+				<img src="resources/oeil.png" style="border: red solid 6px; border-radius: 10px" title="Regarder"/>
+				<img src="resources/outil.png" title="Utiliser"/>
+				<img src="resources/chat-icon.png" title="Parler"/>
+			</div>
+			<div id="image">
+				<img src="resources/cluster.jpg" style="object-fit: cover" title="The Cluster" usemap="#clusterMap"/>
+				<map name="clusterMap">
+					<area shape="rect" coords="600,950,850,600" title="apple" href="https://www.ikea.com"/>
+					<area shape="rect" coords="1800,880,1450,580" title="apple" href="https://www.apple.com"/>
+				</map>
+			</div>
+			<div id="right">
+				<img src="resources/book.png" title="Le livre prefere de Gaetan"/>
+				<img src="resources/towel.png" title="Le torchon du destin"/>
+				<div id="brick" title="One brick on the wall"/>
+			</div>
+			<div id="footer">
+				<p>Vous <span style="font-size: 50px">entrez</span> alors dans une grande piece remplie d'<span style="text-shadow: 5px 6px 5px #ff0000;">ordinateurs</span>...</p>
+				<p style="font-style: italic">- Bonjour, vous êtes nouveau ici ?</p>
+				<form>
+					<input type="text" style="width: 600px; height: 23px">
+					<input type="submit" value="Repondre" style="font-size: 20px; border: 0">
+				</form>
+			</div>
+		</div>
+		<!-- <footer>
+			<p>Vous <span style="font-size: 50px">entrez</span> alors dans une grande piece remplie d'<span style="text-shadow: 5px 6px 5px #ff0000;">ordinateurs</span>...</p>
+			<p style="font-style: italic">- Bonjour, vous êtes nouveau ici ?</p>
+			<form>
+				<input type="text" style="width: 600px; height: 23px">
+				<input type="submit" value="Repondre" style="font-size: 20px; border: 0">
+			</form>
+		</footer> -->
+	</body>
+</html>

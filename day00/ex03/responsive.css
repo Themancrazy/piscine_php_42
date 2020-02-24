@@ -1,0 +1,78 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   responsive.css                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anjansse <anjansse@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/03/24 15:43:50 by anjansse          #+#    #+#             */
+/*   Updated: 2019/03/24 15:47:47 by anjansse         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.hed {
+    color: #ffffff;
+    text-align: center;
+}
+#hidden{
+    border:none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+}
+h1 {
+    color: #000000;
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    color: #ffffff;
+    text-align: center;
+}
+p {
+    font-size: 10px;
+    margin: 0;
+}
+body {
+    width: 100%;
+    background-image: url(http://s3.thingpic.com/images/eT/m9W4pcUXyZ5tNp24ukMirDPt.jpeg);
+    background-size: 150%;
+}
+.nbr_weight {
+    margin-right: 2px;
+      text-align: right;
+}
+.nbr_bottom {
+    margin-left: 2px;
+    text-align: left;
+}
+.color_old_1 {
+    background-color: grey;
+}
+.color_old_2 {
+    background-color: #6a5acd;
+}
+.color_old_3 {
+    background-color: #F9DBA8;
+}
+.color_old_4 {
+    background-color: #b22222;
+}
+.color_old_5 {
+    background-color: orangered;
+}
+.color_old_6 {
+    background-color: #20b2aa;
+}
+.color_old_7 {
+    background-color: #4169e1;
+}
+.color_old_8 {
+    background-color: greenyellow;
+}

@@ -1,0 +1,112 @@
+header {
+	position:relative;
+	margin: auto;
+	margin-top: 15px;
+	width: 2500px;
+	height: 200px;
+	display: block;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px 3px #000;
+}
+
+header img {
+	position:absolute;
+}
+
+header #dot42 {
+	margin: 10px;
+	height: 180px;
+	float: left;
+}
+
+#close, #reload {
+	width: 40px;
+	right: 5px;
+}
+
+#close {
+	top: 150px;
+}
+
+#loupe {
+	width: 370px;
+	top: 25px;
+	right: 60px;
+}
+
+#middle {
+	position:relative;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	width: 2500px;
+}
+
+#left, #right {
+	margin: 20px 55px;
+	float: left;
+	width: 200px;
+	height: 800px;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px 3px #000;
+
+}
+
+#left img {
+	width: 130px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+#right img {
+	width: 130px;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+#brick {
+	background-image: url("resources/brick.jpg");
+	width: 170px;
+	height: 100px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#image {
+	margin-top: 20px;
+	float: left;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	width: 1880px;
+	height: 1070px;
+	box-shadow: 10px 10px 20px 3px #000;
+}
+
+#image img {
+	margin: 15px;
+	width: 1845px;
+}
+
+#footer {
+	width: 800px;
+	height: 240px;
+	position: absolute;
+	top: 950px;
+	left: -50px;
+	background-color: rgb(136, 255, 137);
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px 3px #000;
+}
+
+#footer p {
+	font-family: sans-serif;
+	margin: 0;
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+#footer form {
+	margin-left: 20px;
+}

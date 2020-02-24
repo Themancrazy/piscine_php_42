@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #circle {
+            position: relative;
+            top: 500px;
+            left: 45%;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            transition: 1s;
+            background-color: red;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var circle = document.getElementById("circle");
+        }
+        var color = ['#FF0000', '#008000', '#0000FF'];
+        var size = 200;
+        var i = 0;
+        function increaseCircle() {
+            size += 10;
+            i += 1;
+            if (size > 420)
+                size = 200;
+            if (i == 3)
+                i = 0;
+            circle.style.height = size + "px";
+            circle.style.width = size + "px";
+            circle.style.backgroundColor = color[i];
+        }
+        function deflect() {
+            if (size > 200) {
+                size -= 10;
+                circle.style.height = size + "px";
+                circle.style.width = size + "px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="circle" onclick="increaseCircle()" onmouseout="deflect()"></div>
+</body>
+</html>
